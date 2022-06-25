@@ -26,6 +26,13 @@ a {
   text-decoration: none;
 }
 
+.layout {
+  display: grid;
+  height: 100%;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
 header {
   border-bottom: #DCE4EA 1px solid;
 }
