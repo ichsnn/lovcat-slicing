@@ -113,6 +113,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 67px;
+  margin-bottom: 100px;
   @include container();
 }
 
@@ -125,7 +126,6 @@ footer {
   font-size: 42px;
   line-height: 63px;
   margin-bottom: 20px;
-  max-width: 563px;
   color: var(--color-font-black);
 }
 
@@ -135,7 +135,6 @@ footer {
   line-height: 27px;
   color: var(--color-font-desc);
   margin-bottom: 30px;
-  max-width: 530px;
 }
 
 .btn__primary {
@@ -149,4 +148,38 @@ footer {
   font-weight: 600;
   border-radius: 5px;
   font: var(--font-inter);
+}
+
+.content__title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 57px;
+  color: var(--color-font-black);
+  margin-bottom: 20px;
+}
+
+.content__desc {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--color-font-desc);
+  margin-bottom: 30px;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+#worried-about-your-pet-data {
+  display: flex;
+  gap: 90px;
+  margin-bottom: 100px;
+  @include container();
+}
+
+#worried-about-your-pet-data a {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: var(--color-primary-btn);
 }
