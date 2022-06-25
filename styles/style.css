@@ -1,0 +1,19 @@
+:root {
+  --color-primary-bg: #E5D5C5;
+  --color-primary-btn: #007AFF;
+  --color-secondary-bg: #F9F0E7;
+  --color-font-desc: #8F8A80;
+  --color-font-primary: #59626A;
+  --color-bg: #FEFEFE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+/*# sourceMappingURL=style.css.map */
