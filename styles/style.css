@@ -1,19 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --color-primary-bg: #E5D5C5;
   --color-primary-btn: #007AFF;
   --color-secondary-bg: #F9F0E7;
+  --color-gray: #616161;
   --color-font-desc: #8F8A80;
   --color-font-primary: #59626A;
+  --color-font-black: #263238;
   --color-bg: #FEFEFE;
+  --font-poppins: "Poppins", sans-serif ;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: var(--font-poppins);
+  color: var(--color-font-black);
 }
 
 body {
   background-color: var(--color-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: #DCE4EA 1px solid;
+}
+
+.nav {
+  padding-top: 29px;
+  padding-bottom: 20px;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(1300px + 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav__menu__item {
+  color: var(--color-gray);
+  font-size: 16px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 39px;
+}
+
+.logo .lov {
+  color: #CE9362;
+}
+
+.logo .cat {
+  color: var(--color-font-black);
 }
 
 /*# sourceMappingURL=style.css.map */
