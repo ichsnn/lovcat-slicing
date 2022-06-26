@@ -47,7 +47,6 @@ header {
 main {
   padding-top: 80px;
   padding-bottom: 80px;
-  min-width: 0;
 }
 
 footer {
@@ -73,6 +72,11 @@ footer {
   height: 100%;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+}
+
+.layout > * {
+  min-width: 0;
+  min-height: 0;
 }
 
 .container {
@@ -245,6 +249,10 @@ footer {
   }
 }
 
+#find-your-lovely-pets {
+  margin-bottom: 50px;
+}
+
 #find-your-lovely-pets .cat__container {
   max-width: 1440px;
   margin-left: auto;
@@ -253,9 +261,14 @@ footer {
 }
 
 #find-your-lovely-pets .cat__container .cat__scroll {
-  padding-left: 70px;
-  padding-right: 70px;
   overflow-x: scroll;
+  padding: 0 1rem;
+  @include respond-to("lg") {
+    padding: 0 1.5rem;
+  }
+  @include respond-to("xxl") {
+    padding: 0 70px;
+  }
 }
 
 #find-your-lovely-pets .cat__container .cat__scroll::-webkit-scrollbar {
@@ -326,4 +339,34 @@ footer {
   position: absolute;
   z-index: -1;
   left: 0;
+}
+
+#happy-people-with-happy-pets h1 {
+  font-family: var(--font-inter);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+}
+
+#happy-people-with-happy-pets .people__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#happy-people-with-happy-pets .people__container .people__scroll {
+  overflow-x: scroll;
+  padding: 0 1rem;
+  @include respond-to("lg") {
+    padding: 0 1.5rem;
+  }
+  @include respond-to("xxl") {
+    padding: 0 70px;
+  }
+}
+
+#happy-people-with-happy-pets .people__container .people__scroll::-webkit-scrollbar {
+  display: none;
 }
