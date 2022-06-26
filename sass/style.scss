@@ -52,6 +52,8 @@ main {
 footer {
   padding-top: 49px;
   padding-bottom: 50px;
+  background-color: #FEFEFE;
+  border-top: 2px solid #EBEBEB
 }
 
 @mixin container {
@@ -354,6 +356,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  margin-top: 30px;
 }
 
 #happy-people-with-happy-pets .people__container .people__scroll {
@@ -367,6 +370,64 @@ footer {
   }
 }
 
-#happy-people-with-happy-pets .people__container .people__scroll::-webkit-scrollbar {
+#happy-people-with-happy-pets
+  .people__container
+  .people__scroll::-webkit-scrollbar {
   display: none;
+}
+
+.people__content {
+  display: flex;
+  gap: 22px;
+  flex-wrap: nowrap;
+}
+
+.people__card {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px 0px #0000000f;
+  overflow: hidden;
+  max-width: 530px;
+  min-width: 530px;
+}
+
+.people__card img {
+  display: block;
+}
+
+.people__desc {
+  padding: 30px 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.people__comment {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 5%;
+  color: black;
+}
+
+.people__name {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  color: #706e6b;
+  margin-bottom: 5px;
+}
+
+.people__job {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #564d4d;
 }
