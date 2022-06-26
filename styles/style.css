@@ -53,7 +53,7 @@ footer {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
@@ -75,7 +75,7 @@ footer {
 }
 
 .nav__container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
@@ -129,7 +129,7 @@ footer {
 #hero {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
@@ -209,7 +209,7 @@ footer {
 #worried-about-your-pet-data {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
@@ -242,11 +242,11 @@ footer {
 #join-to-our-community-for-gathering-love {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
-  gap: 130px;
+  margin-bottom: 80px;
 }
 @media (min-width: 1080px) {
   #join-to-our-community-for-gathering-love {
@@ -261,6 +261,11 @@ footer {
 @media (min-width: 1440px) {
   #join-to-our-community-for-gathering-love {
     padding: 0 70px;
+  }
+}
+@media (min-width: 1280px) {
+  #join-to-our-community-for-gathering-love {
+    grid-template-columns: minmax(300px, 529px) 1fr;
   }
 }
 
@@ -291,12 +296,12 @@ footer {
 .bg-vector {
   position: absolute;
   z-index: -1;
-  bottom: -128px;
-  right: -50px;
+  bottom: -108px;
+  right: -44px;
 }
 @media (min-width: 1080px) {
   .bg-vector {
-    top: -128px;
+    top: -108px;
     bottom: auto;
   }
 }
@@ -304,6 +309,73 @@ footer {
   .bg-vector {
     right: 0;
   }
+}
+
+#find-your-lovely-pets .container {
+  overflow-x: scroll;
+}
+
+#find-your-lovely-pets .container::-webkit-scrollbar {
+  display: none;
+}
+
+#find-your-lovely-pets > h2 {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33.89px;
+  color: #86827b;
+  text-align: center;
+}
+
+#find-your-lovely-pets > h1 {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.57px;
+  color: var(--color-font-black);
+  text-align: center;
+}
+
+.cat__content {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.cat__card {
+  min-width: 237px;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -5px -5px 25px 0px rgba(0, 0, 0, 0.0509803922);
+}
+
+.cat__image img {
+  display: block;
+}
+
+.cat__desc {
+  padding: 10px;
+}
+
+.cat__desc .cat__name {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  margin-bottom: 5px;
+}
+
+.cat__tag {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: var(--color-font-desc);
 }
 
 /*# sourceMappingURL=style.css.map */

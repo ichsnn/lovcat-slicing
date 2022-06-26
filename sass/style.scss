@@ -1,13 +1,10 @@
-@import 'breakpoints.scss';
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "breakpoints.scss";
+@import "fonts.scss";
 
 @mixin grid-section {
   display: grid;
   grid-template-columns: 1fr;
-  @include respond-to('lg') {
+  @include respond-to("lg") {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -58,14 +55,14 @@ footer {
 }
 
 @mixin container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
-  @include respond-to('lg') {
+  @include respond-to("lg") {
     padding: 0 1.5rem;
   }
-  @include respond-to('xxl') {
+  @include respond-to("xxl") {
     padding: 0 70px;
   }
 }
@@ -203,7 +200,10 @@ footer {
 #join-to-our-community-for-gathering-love {
   @include grid-section();
   @include container();
-  gap: 130px;
+  @include respond-to("xl") {
+    grid-template-columns: minmax(300px, 529px) 1fr;
+  }
+  margin-bottom: 80px;
 }
 
 #join-to-our-community-for-gathering-love .sub__content {
@@ -233,13 +233,80 @@ footer {
 .bg-vector {
   position: absolute;
   z-index: -1;
-  bottom: -128px;
-  right: -50px;
-  @include respond-to('lg') {
-    top: -128px;
+  bottom: -108px;
+  right: -44px;
+  @include respond-to("lg") {
+    top: -108px;
     bottom: auto;
   }
-  @include respond-to('xxl') {
+  @include respond-to("xxl") {
     right: 0;
   }
+}
+
+#find-your-lovely-pets .container {
+  overflow-x: scroll;
+}
+
+#find-your-lovely-pets .container::-webkit-scrollbar {
+  display: none;
+}
+
+#find-your-lovely-pets > h2 {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33.89px;
+  color: #86827b;
+  text-align: center;
+}
+
+#find-your-lovely-pets > h1 {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.57px;
+  color: var(--color-font-black);
+  text-align: center;
+}
+
+.cat__content {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.cat__card {
+  min-width: 237px;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -5px -5px 25px 0px #0000000d;
+}
+
+.cat__image img {
+  display: block;
+}
+
+.cat__desc {
+  padding: 10px;
+}
+
+.cat__desc .cat__name {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  margin-bottom: 5px;
+}
+
+.cat__tag {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: var(--color-font-desc);
 }
