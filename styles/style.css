@@ -9,7 +9,7 @@
   --color-font-desc: #8f8a80;
   --color-font-primary: #59626a;
   --color-font-black: #263238;
-  --color-bg: #fAfAfA;
+  --color-bg: #fafafa;
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
@@ -22,6 +22,7 @@
 body {
   background-color: var(--color-bg);
   font-family: var(--font-poppins);
+  overflow-x: hidden;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
 }
 
 header {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   border-bottom: #dce4ea 1px solid;
 }
 
@@ -52,11 +53,20 @@ footer {
 }
 
 .container {
-  max-width: calc(1300px + 2rem);
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
+}
+@media (min-width: 1080px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 70px;
+  }
 }
 
 .nav {
@@ -65,14 +75,23 @@ footer {
 }
 
 .nav__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: calc(1300px + 2rem);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+}
+@media (min-width: 1080px) {
+  .nav__container {
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__container {
+    padding: 0 70px;
+  }
 }
 
 .nav__menu {
@@ -108,15 +127,30 @@ footer {
 }
 
 #hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
   align-items: center;
   gap: 67px;
   margin-bottom: 100px;
-  max-width: calc(1300px + 2rem);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+}
+@media (min-width: 1080px) {
+  #hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1080px) {
+  #hero {
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  #hero {
+    padding: 0 70px;
+  }
 }
 
 #hero_picture {
@@ -173,14 +207,29 @@ footer {
 }
 
 #worried-about-your-pet-data {
-  display: flex;
-  gap: 90px;
-  margin-bottom: 100px;
-  max-width: calc(1300px + 2rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
+  gap: 90px;
+  margin-bottom: 120px;
+}
+@media (min-width: 1080px) {
+  #worried-about-your-pet-data {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1080px) {
+  #worried-about-your-pet-data {
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  #worried-about-your-pet-data {
+    padding: 0 70px;
+  }
 }
 
 #worried-about-your-pet-data a {
@@ -188,6 +237,73 @@ footer {
   line-height: 36px;
   font-weight: 500;
   color: var(--color-primary-btn);
+}
+
+#join-to-our-community-for-gathering-love {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  gap: 130px;
+}
+@media (min-width: 1080px) {
+  #join-to-our-community-for-gathering-love {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1080px) {
+  #join-to-our-community-for-gathering-love {
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  #join-to-our-community-for-gathering-love {
+    padding: 0 70px;
+  }
+}
+
+#join-to-our-community-for-gathering-love .sub__content {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) minmax(100px, 200px);
+  row-gap: 30px;
+  column-gap: 70px;
+}
+
+#join-to-our-community-for-gathering-love .sub__content .title {
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 29.05px;
+  font-family: var(--font-inter);
+  color: #152c2b;
+  margin-bottom: 10px;
+}
+
+#join-to-our-community-for-gathering-love .sub__content .desc {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-inter);
+  line-height: 19.36px;
+  color: var(--color-font-desc);
+}
+
+.bg-vector {
+  position: absolute;
+  z-index: -1;
+  bottom: -128px;
+  right: -50px;
+}
+@media (min-width: 1080px) {
+  .bg-vector {
+    top: -128px;
+    bottom: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .bg-vector {
+    right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
