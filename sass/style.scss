@@ -245,11 +245,20 @@ footer {
   }
 }
 
-#find-your-lovely-pets .container {
+#find-your-lovely-pets .cat__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#find-your-lovely-pets .cat__container .cat__scroll {
+  padding-left: 70px;
+  padding-right: 70px;
   overflow-x: scroll;
 }
 
-#find-your-lovely-pets .container::-webkit-scrollbar {
+#find-your-lovely-pets .cat__container .cat__scroll::-webkit-scrollbar {
   display: none;
 }
 
@@ -285,6 +294,7 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: -5px -5px 25px 0px #0000000d;
+  margin-bottom: 25px;
 }
 
 .cat__image img {
@@ -310,4 +320,10 @@ footer {
   line-height: 17px;
   text-align: left;
   color: var(--color-font-desc);
+}
+
+.bg-vector-2 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
 }

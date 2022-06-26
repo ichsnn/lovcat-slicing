@@ -8,7 +8,7 @@ class CatCard extends HTMLElement {
     this.catImage = this.getAttribute("data-catImage");
     this.catTag = this.getAttribute("data-catTag");
 
-    this.setAttribute('class', 'cat-card');
+    this.setAttribute('class', 'cat__card');
 
     this.innerHTML = `
       <div class="cat__image">
