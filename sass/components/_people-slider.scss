@@ -28,7 +28,7 @@
 }
 
 .people__comment {
-  font-family: var(--font-inter);
+  font-family: $font-inter;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -37,7 +37,7 @@
 }
 
 .people__name {
-  font-family: var(--font-inter);
+  font-family: $font-inter;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
