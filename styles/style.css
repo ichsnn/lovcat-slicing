@@ -41,10 +41,10 @@ main {
 }
 
 footer {
-  padding-top: 49px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #FEFEFE;
-  border-top: 2px solid #EBEBEB;
+  background-color: #fefefe;
+  border-top: 2px solid #ebebeb;
 }
 
 .layout {
@@ -123,14 +123,6 @@ footer {
 
 .logo .cat {
   color: var(--color-font-black);
-}
-
-.footer__copyright {
-  text-align: center;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-gray-light) !important;
 }
 
 #hero {
@@ -253,7 +245,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
-  margin-bottom: 80px;
+  margin-bottom: 83px;
 }
 @media (min-width: 1080px) {
   #join-to-our-community-for-gathering-love {
@@ -503,6 +495,85 @@ footer {
   font-size: 16px;
   line-height: 19px;
   color: #564d4d;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 459px) 1fr;
+}
+
+.footer__desc {
+  max-width: 252px;
+}
+
+.footer__desc h1 {
+  margin-bottom: 16px;
+}
+
+.footer__ps {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: var(--color-font-desc);
+  margin-bottom: 22px;
+}
+
+.footer__navMenu {
+  display: flex;
+  gap: 120px;
+  margin-top: 5px;
+  margin-bottom: 51px;
+  padding-left: 10px;
+}
+
+.footer__navMenu__title {
+  margin-bottom: 10px;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--color-font-black);
+}
+
+.footer__navMenu__item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer__navMenu__item a {
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+  color: var(--color-gray-light);
+}
+
+.footer__copyright {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-gray-light) !important;
+}
+
+footer .btn__donateUs {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #caa180;
+  border-radius: 5px;
+  padding: 12px 24px 11px 24px;
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--color-font-black);
 }
 
 /*# sourceMappingURL=style.css.map */
