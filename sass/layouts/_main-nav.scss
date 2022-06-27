@@ -1,0 +1,21 @@
+.nav {
+  padding-top: 29px;
+  padding-bottom: 20px;
+}
+
+.nav__container {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav__menu__item {
+  color: var(--color-gray);
+  font-size: 16px;
+}

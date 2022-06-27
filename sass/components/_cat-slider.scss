@@ -1,0 +1,41 @@
+.cat__content {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.cat__card {
+  min-width: 237px;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -5px -5px 25px 0px #0000000d;
+  margin-bottom: 25px;
+}
+
+.cat__image img {
+  display: block;
+}
+
+.cat__desc {
+  padding: 10px;
+}
+
+.cat__desc .cat__name {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  margin-bottom: 5px;
+}
+
+.cat__tag {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: var(--color-font-desc);
+}

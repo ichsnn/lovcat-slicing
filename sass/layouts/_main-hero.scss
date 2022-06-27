@@ -1,0 +1,27 @@
+#hero {
+  @include grid-section();
+  @include container();
+  align-items: center;
+  gap: 67px;
+  margin-bottom: 100px;
+}
+
+#hero_picture {
+  max-width: 626px;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 63px;
+  margin-bottom: 20px;
+  color: $font-black;
+}
+
+.hero__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $font-desc;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,12 @@
+.btn__primary {
+  display: inline-flex;
+  min-width: 200px;
+  min-height: 45px;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-btn;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: $font-inter;
+}

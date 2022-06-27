@@ -1,0 +1,78 @@
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 459px) 1fr;
+}
+
+.footer__desc {
+  max-width: 252px;
+}
+
+.footer__desc h1 {
+  margin-bottom: 16px;
+}
+
+.footer__ps {
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: $font-desc;
+  margin-bottom: 22px;
+}
+
+.footer__navMenu {
+  display: flex;
+  gap: 120px;
+  margin-top: 5px;
+  margin-bottom: 51px;
+  padding-left: 10px;
+}
+
+.footer__navMenu__title {
+  margin-bottom: 10px;
+  font-family: $font-inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: $font-black;
+}
+
+.footer__navMenu__item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer__navMenu__item a {
+  text-decoration: none;
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+  color: $gray-light;
+}
+
+.footer__copyright {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray-light;
+}
+
+footer .btn__donateUs {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #caa180;
+  border-radius: 5px;
+  padding: 12px 24px 11px 24px;
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $font-black;
+}

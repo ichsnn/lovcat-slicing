@@ -1,0 +1,33 @@
+.content__title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 57px;
+  color: var(--color-font-black);
+  margin-bottom: 20px;
+}
+
+.content__desc {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--color-font-desc);
+  margin-bottom: 30px;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+#worried-about-your-pet-data {
+  @include grid-section();
+  @include container();
+  gap: 90px;
+  margin-bottom: 120px;
+}
+
+#worried-about-your-pet-data a {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: $primary-btn;
+}

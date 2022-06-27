@@ -1,0 +1,32 @@
+#happy-people-with-happy-pets h1 {
+  font-family: var(--font-inter);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+}
+
+#happy-people-with-happy-pets .people__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 30px;
+}
+
+#happy-people-with-happy-pets .people__container .people__scroll {
+  overflow-x: scroll;
+  padding: 0 1rem;
+  @include respond-to("lg") {
+    padding: 0 1.5rem;
+  }
+  @include respond-to("xxl") {
+    padding: 0 70px;
+  }
+}
+
+#happy-people-with-happy-pets
+  .people__container
+  .people__scroll::-webkit-scrollbar {
+  display: none;
+}

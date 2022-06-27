@@ -1,0 +1,32 @@
+#join-to-our-community-for-gathering-love {
+  @include grid-section();
+  @include container();
+  @include respond-to("xl") {
+    grid-template-columns: minmax(300px, 529px) 1fr;
+  }
+  margin-bottom: 83px;
+}
+
+#join-to-our-community-for-gathering-love .sub__content {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) minmax(100px, 200px);
+  row-gap: 30px;
+  column-gap: 70px;
+}
+
+#join-to-our-community-for-gathering-love .sub__content .title {
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 29.05px;
+  font-family: $font-inter;
+  color: #152c2b;
+  margin-bottom: 10px;
+}
+
+#join-to-our-community-for-gathering-love .sub__content .desc {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $font-inter;
+  line-height: 19.36px;
+  color: $font-desc;
+}

@@ -1,0 +1,19 @@
+.bg-vector {
+  position: absolute;
+  z-index: -1;
+  bottom: -108px;
+  right: -44px;
+  @include respond-to("lg") {
+    top: -108px;
+    bottom: auto;
+  }
+  @include respond-to("xxl") {
+    right: 0;
+  }
+}
+
+.bg-vector-2 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}

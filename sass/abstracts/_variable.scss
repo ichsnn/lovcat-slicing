@@ -1,0 +1,24 @@
+$breakpoints: (
+  'sm':  ( min-width:  640px ),
+  'md': ( min-width:  768px ),
+  'lg':  ( min-width: 1080px ),
+  'xl': (min-width: 1280px),
+  'xxl': (min-width: 1440px),
+) !default;
+
+// Fonts
+$font-poppins: 'Poppins', sans-serif;
+$font-inter: 'Inter', sans-serif;
+
+// Colors
+$primary-bg: #e5d5c5;
+$primary-btn: #007aff;
+$secondary-bg: #f9f0e7;
+$gray: #616161;
+$gray-light: #9d9d9d;
+$font-desc: #8f8a80;
+$font-primary: #59626a;
+$font-black: #263238;
+$bg: #fafafa;
+
+

@@ -1,0 +1,43 @@
+#find-your-lovely-pets {
+  margin-bottom: 50px;
+}
+
+#find-your-lovely-pets .cat__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#find-your-lovely-pets .cat__container .cat__scroll {
+  overflow-x: scroll;
+  padding: 0 1rem;
+  @include respond-to("lg") {
+    padding: 0 1.5rem;
+  }
+  @include respond-to("xxl") {
+    padding: 0 70px;
+  }
+}
+
+#find-your-lovely-pets .cat__container .cat__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#find-your-lovely-pets > h2 {
+  font-family: $font-inter;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33.89px;
+  color: #86827b;
+  text-align: center;
+}
+
+#find-your-lovely-pets > h1 {
+  font-family: $font-inter;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.57px;
+  color: $font-black;
+  text-align: center;
+}
